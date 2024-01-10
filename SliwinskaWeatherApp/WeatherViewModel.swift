@@ -9,9 +9,7 @@ import Foundation
 
 class WeatherViewModel: ObservableObject {
     @Published private(set) var model: WeatherModel = WeatherModel(cities: ["Venice", "Paris", "Warsaw", "Hamburg", "Ilava", "Krakow", "Milan", "Helsinki", "Berlin"])
-    
-    // aktualnie wyświetlany parametr
-    //@Published var currentParameterIndex = 0;
+
     
     var records: Array<WeatherModel.WeatherRecord> {
         model.records
